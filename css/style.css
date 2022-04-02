@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+body{
+    font-family: 'Questrial', sans-serif;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+header {
+    position: relative;
+    box-shadow: 0px 5px 4px 0px rgb(63 63 63 / 27%);
+    width: 100%;
+    background-color: #fff;
+}
+aside {
+    min-height: 100vh;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #C2185B;
+}
+
+.btn-primary{
+    background-color: #C2185B;
+    border-color: #C2185B;
+}
+
+main.login {
+    width: 400px;
+}
+
+section.full{
+    width: 100%;
+    min-height: 80vh;
+    padding: 50px 0;
+}
+
+article.evento {
+    width: 350px;
+}
+
+footer nav ul{
+    list-style: none;
+    display: flex;
+}
+
+footer nav ul li  {
+    padding: 10px;
+}
+
+/* Slider */
+
+#banner-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#slider {
+    width: 90%;
+    height: 30vw;
+    max-height: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#slider img {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1000ms;
+    max-width: 1440px;
+}
+
+#slider img.selected {
+    opacity: 1;
+}
+
+                                            /* Responsive */
+
+/* Footer */
+
+#footer-img-container{
+    width: 50%;
+}
+
+#footer-img-container img {
+    width: 40vw;
+    max-width: 600px;
+}
+
+#aside-hidden {
+    display: flex;
+}
+
+#header-hidden {
+    display: none;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+#nav-hidden {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+    #footer-img-container {
+        display: none;
+    }
+
+    #menu-footer {
+        display: block;
+    }
+
+    .vanish {
+        display: none;
+    }
+
+    #btn-menu-admin {
+        min-width: 130px;
+    }
+
+    .my-5 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    #header-hidden {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #aside-hidden {
+        display: none;
+    }
+
+    #form-container {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+  }
+
+
+/* Index - main */
+
+#lista-eventos {
+    flex-wrap: wrap;
+}
+
+#title-index {
+    text-align: center;
+}
+
+/* admin */
+
+.btn.btn-dark, .btn.btn-secondary, .btn.btn-danger {
+    width: 100%;
+}
